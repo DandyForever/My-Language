@@ -1,0 +1,56 @@
+function solvelinear(b c root)
+[
+    if (b == 0)
+    [
+        if (c == 0)
+            [
+                root = 1 / 0;
+            ]
+        else
+            [
+                root = sqrt(-1);
+            ]
+    ]
+    else
+    [
+        root = -1 * c / b;
+    ]
+    print (root);
+]
+
+function solvesquare (a b c d root1 root2)
+[
+    d = b * b - 4 * a * c;
+
+    if (d < 0)
+    [
+        root1 = sqrt (-1);
+        print (root1);
+    ]
+    else if (d == 0)
+    [
+        root1 = -1 * b / 2 / a;
+        print (root1);
+    ]
+    else
+    [
+        d = sqrt (d);
+        root1 = (-1 * b - d) / 2 / a;
+        root2 = (-1 * b + d) / 2 / a;
+
+        print (root1);
+        print (root2);
+    ]
+]
+
+function main (a b c d root1 root2)
+[
+    scan (a);
+    scan (b);
+    scan (c);
+
+    if (a == 0)
+        call solvelinear (b c root1);
+    else
+        call solvesquare (a b c d root1 root2);
+]

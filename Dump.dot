@@ -1,0 +1,958 @@
+digraph Tree
+{
+rankdir=TB
+		node [ shape = "box", color = "black" ]
+		edge [ color = "black" ]
+
+	CanaryLEFT [ label = "CanaryLEFT = 666666666" ]
+	CanaryRIGHT [ label = "CanaryRIGHT = 999999999" ]
+	size [ label = "size = 158" ]
+
+subgraph clust1{
+rankdir = HR;
+	elem1 [ shape = "record", label = "{ <pointer> 1\n0282e960|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e1d0 | <right> right\n0282e7f8 } }", color = "blue" ]
+}
+
+subgraph clust2{
+rankdir = HR;
+	elem2 [ shape = "record", label = "{ <pointer> 2\n0282e1d0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282b310 | <right> right\n0282e310 } }", color = "blue" ]
+}
+
+		elem1:<left> -> elem2
+subgraph clust3{
+rankdir = HR;
+	elem3 [ shape = "record", label = "{ <pointer> 3\n0282b310|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282b400 | <right> right\n0282b3d8 } }", color = "blue" ]
+}
+
+		elem2:<left> -> elem3
+subgraph clust4{
+rankdir = HR;
+	elem4 [ shape = "record", label = "{ <pointer> 4\n0282b400|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n4 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem3:<left> -> elem4
+subgraph clust5{
+rankdir = HR;
+	elem5 [ shape = "record", label = "{ <pointer> 5\n0282b3d8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282a690 | <right> right\n0282afa0 } }", color = "blue" ]
+}
+
+		elem3:<right> -> elem5
+subgraph clust6{
+rankdir = HR;
+	elem6 [ shape = "record", label = "{ <pointer> 6\n0282a690|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  17.000000  | <first> first\n0282e960 } | { <left> left\n0282a8e8 | <right> right\n0282a9d8 } }", color = "blue" ]
+}
+
+		elem5:<left> -> elem6
+subgraph clust7{
+rankdir = HR;
+	elem7 [ shape = "record", label = "{ <pointer> 7\n0282a8e8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  16.000000  | <first> first\n0282e960 } | { <left> left\n02821418 | <right> right\n0282a6b8 } }", color = "blue" ]
+}
+
+		elem6:<left> -> elem7
+subgraph clust8{
+rankdir = HR;
+	elem8 [ shape = "record", label = "{ <pointer> 8\n02821418|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  11.000000  | <first> first\n0282e960 } | { <left> left\n028213c8 | <right> right\n028213f0 } }", color = "blue" ]
+}
+
+		elem7:<left> -> elem8
+subgraph clust9{
+rankdir = HR;
+	elem9 [ shape = "record", label = "{ <pointer> 9\n028213c8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem8:<left> -> elem9
+subgraph clust10{
+rankdir = HR;
+	elem10 [ shape = "record", label = "{ <pointer> 10\n028213f0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem8:<right> -> elem10
+subgraph clust11{
+rankdir = HR;
+	elem11 [ shape = "record", label = "{ <pointer> 11\n0282a6b8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  17.000000  | <first> first\n0282e960 } | { <left> left\n0282a7f8 | <right> right\n0282a870 } }", color = "blue" ]
+}
+
+		elem7:<right> -> elem11
+subgraph clust12{
+rankdir = HR;
+	elem12 [ shape = "record", label = "{ <pointer> 12\n0282a7f8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  16.000000  | <first> first\n0282e960 } | { <left> left\n0282a510 | <right> right\n0282aa00 } }", color = "blue" ]
+}
+
+		elem11:<left> -> elem12
+subgraph clust13{
+rankdir = HR;
+	elem13 [ shape = "record", label = "{ <pointer> 13\n0282a510|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  11.000000  | <first> first\n0282e960 } | { <left> left\n02821440 | <right> right\n02821468 } }", color = "blue" ]
+}
+
+		elem12:<left> -> elem13
+subgraph clust14{
+rankdir = HR;
+	elem14 [ shape = "record", label = "{ <pointer> 14\n02821440|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem13:<left> -> elem14
+subgraph clust15{
+rankdir = HR;
+	elem15 [ shape = "record", label = "{ <pointer> 15\n02821468|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem13:<right> -> elem15
+subgraph clust16{
+rankdir = HR;
+	elem16 [ shape = "record", label = "{ <pointer> 16\n0282aa00|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282a7d0 | <right> right\n0282a730 } }", color = "blue" ]
+}
+
+		elem12:<right> -> elem16
+subgraph clust17{
+rankdir = HR;
+	elem17 [ shape = "record", label = "{ <pointer> 17\n0282a7d0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282a910 | <right> right\n0282a758 } }", color = "blue" ]
+}
+
+		elem16:<left> -> elem17
+subgraph clust18{
+rankdir = HR;
+	elem18 [ shape = "record", label = "{ <pointer> 18\n0282a910|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem17:<left> -> elem18
+subgraph clust19{
+rankdir = HR;
+	elem19 [ shape = "record", label = "{ <pointer> 19\n0282a758|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem17:<right> -> elem19
+subgraph clust20{
+rankdir = HR;
+	elem20 [ shape = "record", label = "{ <pointer> 20\n0282a730|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem16:<right> -> elem20
+subgraph clust21{
+rankdir = HR;
+	elem21 [ shape = "record", label = "{ <pointer> 21\n0282a870|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282a7a8 | <right> right\n0282a9b0 } }", color = "blue" ]
+}
+
+		elem11:<right> -> elem21
+subgraph clust22{
+rankdir = HR;
+	elem22 [ shape = "record", label = "{ <pointer> 22\n0282a7a8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  7.000000  | <first> first\n0282e960 } | { <left> left\n0282a960 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem21:<left> -> elem22
+subgraph clust23{
+rankdir = HR;
+	elem23 [ shape = "record", label = "{ <pointer> 23\n0282a960|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282a6e0 | <right> right\n0282a820 } }", color = "blue" ]
+}
+
+		elem22:<left> -> elem23
+subgraph clust24{
+rankdir = HR;
+	elem24 [ shape = "record", label = "{ <pointer> 24\n0282a6e0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem23:<left> -> elem24
+subgraph clust25{
+rankdir = HR;
+	elem25 [ shape = "record", label = "{ <pointer> 25\n0282a820|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem23:<right> -> elem25
+subgraph clust26{
+rankdir = HR;
+	elem26 [ shape = "record", label = "{ <pointer> 26\n0282a9b0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem21:<right> -> elem26
+subgraph clust27{
+rankdir = HR;
+	elem27 [ shape = "record", label = "{ <pointer> 27\n0282a9d8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282a988 | <right> right\n0282a848 } }", color = "blue" ]
+}
+
+		elem6:<right> -> elem27
+subgraph clust28{
+rankdir = HR;
+	elem28 [ shape = "record", label = "{ <pointer> 28\n0282a988|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282a708 | <right> right\n0282a938 } }", color = "blue" ]
+}
+
+		elem27:<left> -> elem28
+subgraph clust29{
+rankdir = HR;
+	elem29 [ shape = "record", label = "{ <pointer> 29\n0282a708|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem28:<left> -> elem29
+subgraph clust30{
+rankdir = HR;
+	elem30 [ shape = "record", label = "{ <pointer> 30\n0282a938|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282a8c0 | <right> right\n0282a780 } }", color = "blue" ]
+}
+
+		elem28:<right> -> elem30
+subgraph clust31{
+rankdir = HR;
+	elem31 [ shape = "record", label = "{ <pointer> 31\n0282a8c0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282a668 | <right> right\n0282a898 } }", color = "blue" ]
+}
+
+		elem30:<left> -> elem31
+subgraph clust32{
+rankdir = HR;
+	elem32 [ shape = "record", label = "{ <pointer> 32\n0282a668|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem31:<left> -> elem32
+subgraph clust33{
+rankdir = HR;
+	elem33 [ shape = "record", label = "{ <pointer> 33\n0282a898|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem31:<right> -> elem33
+subgraph clust34{
+rankdir = HR;
+	elem34 [ shape = "record", label = "{ <pointer> 34\n0282a780|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem30:<right> -> elem34
+subgraph clust35{
+rankdir = HR;
+	elem35 [ shape = "record", label = "{ <pointer> 35\n0282a848|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem27:<right> -> elem35
+subgraph clust36{
+rankdir = HR;
+	elem36 [ shape = "record", label = "{ <pointer> 36\n0282afa0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  20.000000  | <first> first\n0282e960 } | { <left> left\n0282b360 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem5:<right> -> elem36
+subgraph clust37{
+rankdir = HR;
+	elem37 [ shape = "record", label = "{ <pointer> 37\n0282b360|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem36:<left> -> elem37
+subgraph clust38{
+rankdir = HR;
+	elem38 [ shape = "record", label = "{ <pointer> 38\n0282e310|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e180 | <right> right\n0282e428 } }", color = "blue" ]
+}
+
+		elem2:<right> -> elem38
+subgraph clust39{
+rankdir = HR;
+	elem39 [ shape = "record", label = "{ <pointer> 39\n0282e180|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n4 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem38:<left> -> elem39
+subgraph clust40{
+rankdir = HR;
+	elem40 [ shape = "record", label = "{ <pointer> 40\n0282e428|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282b068 | <right> right\n0282e2e8 } }", color = "blue" ]
+}
+
+		elem38:<right> -> elem40
+subgraph clust41{
+rankdir = HR;
+	elem41 [ shape = "record", label = "{ <pointer> 41\n0282b068|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282b478 | <right> right\n0282b428 } }", color = "blue" ]
+}
+
+		elem40:<left> -> elem41
+subgraph clust42{
+rankdir = HR;
+	elem42 [ shape = "record", label = "{ <pointer> 42\n0282b478|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282b450 | <right> right\n0282b1a8 } }", color = "blue" ]
+}
+
+		elem41:<left> -> elem42
+subgraph clust43{
+rankdir = HR;
+	elem43 [ shape = "record", label = "{ <pointer> 43\n0282b450|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282b338 | <right> right\n0282b0b8 } }", color = "blue" ]
+}
+
+		elem42:<left> -> elem43
+subgraph clust44{
+rankdir = HR;
+	elem44 [ shape = "record", label = "{ <pointer> 44\n0282b338|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem43:<left> -> elem44
+subgraph clust45{
+rankdir = HR;
+	elem45 [ shape = "record", label = "{ <pointer> 45\n0282b0b8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem43:<right> -> elem45
+subgraph clust46{
+rankdir = HR;
+	elem46 [ shape = "record", label = "{ <pointer> 46\n0282b1a8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282b2c0 | <right> right\n0282b270 } }", color = "blue" ]
+}
+
+		elem42:<right> -> elem46
+subgraph clust47{
+rankdir = HR;
+	elem47 [ shape = "record", label = "{ <pointer> 47\n0282b2c0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282afc8 | <right> right\n0282b0e0 } }", color = "blue" ]
+}
+
+		elem46:<left> -> elem47
+subgraph clust48{
+rankdir = HR;
+	elem48 [ shape = "record", label = "{ <pointer> 48\n0282afc8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem47:<left> -> elem48
+subgraph clust49{
+rankdir = HR;
+	elem49 [ shape = "record", label = "{ <pointer> 49\n0282b0e0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem47:<right> -> elem49
+subgraph clust50{
+rankdir = HR;
+	elem50 [ shape = "record", label = "{ <pointer> 50\n0282b270|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem46:<right> -> elem50
+subgraph clust51{
+rankdir = HR;
+	elem51 [ shape = "record", label = "{ <pointer> 51\n0282b428|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem41:<right> -> elem51
+subgraph clust52{
+rankdir = HR;
+	elem52 [ shape = "record", label = "{ <pointer> 52\n0282e2e8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  17.000000  | <first> first\n0282e960 } | { <left> left\n0282b1d0 | <right> right\n0282e1a8 } }", color = "blue" ]
+}
+
+		elem40:<right> -> elem52
+subgraph clust53{
+rankdir = HR;
+	elem53 [ shape = "record", label = "{ <pointer> 53\n0282b1d0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  16.000000  | <first> first\n0282e960 } | { <left> left\n0282b3b0 | <right> right\n0282b180 } }", color = "blue" ]
+}
+
+		elem52:<left> -> elem53
+subgraph clust54{
+rankdir = HR;
+	elem54 [ shape = "record", label = "{ <pointer> 54\n0282b3b0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  10.000000  | <first> first\n0282e960 } | { <left> left\n0282b388 | <right> right\n0282aff0 } }", color = "blue" ]
+}
+
+		elem53:<left> -> elem54
+subgraph clust55{
+rankdir = HR;
+	elem55 [ shape = "record", label = "{ <pointer> 55\n0282b388|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem54:<left> -> elem55
+subgraph clust56{
+rankdir = HR;
+	elem56 [ shape = "record", label = "{ <pointer> 56\n0282aff0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem54:<right> -> elem56
+subgraph clust57{
+rankdir = HR;
+	elem57 [ shape = "record", label = "{ <pointer> 57\n0282b180|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282b040 | <right> right\n0282b158 } }", color = "blue" ]
+}
+
+		elem53:<right> -> elem57
+subgraph clust58{
+rankdir = HR;
+	elem58 [ shape = "record", label = "{ <pointer> 58\n0282b040|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282b130 | <right> right\n0282b248 } }", color = "blue" ]
+}
+
+		elem57:<left> -> elem58
+subgraph clust59{
+rankdir = HR;
+	elem59 [ shape = "record", label = "{ <pointer> 59\n0282b130|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  7.000000  | <first> first\n0282e960 } | { <left> left\n0282b220 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem58:<left> -> elem59
+subgraph clust60{
+rankdir = HR;
+	elem60 [ shape = "record", label = "{ <pointer> 60\n0282b220|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282b108 | <right> right\n0282b018 } }", color = "blue" ]
+}
+
+		elem59:<left> -> elem60
+subgraph clust61{
+rankdir = HR;
+	elem61 [ shape = "record", label = "{ <pointer> 61\n0282b108|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem60:<left> -> elem61
+subgraph clust62{
+rankdir = HR;
+	elem62 [ shape = "record", label = "{ <pointer> 62\n0282b018|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem60:<right> -> elem62
+subgraph clust63{
+rankdir = HR;
+	elem63 [ shape = "record", label = "{ <pointer> 63\n0282b248|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem58:<right> -> elem63
+subgraph clust64{
+rankdir = HR;
+	elem64 [ shape = "record", label = "{ <pointer> 64\n0282b158|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  20.000000  | <first> first\n0282e960 } | { <left> left\n0282b090 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem57:<right> -> elem64
+subgraph clust65{
+rankdir = HR;
+	elem65 [ shape = "record", label = "{ <pointer> 65\n0282b090|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem64:<left> -> elem65
+subgraph clust66{
+rankdir = HR;
+	elem66 [ shape = "record", label = "{ <pointer> 66\n0282e1a8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  17.000000  | <first> first\n0282e960 } | { <left> left\n0282b720 | <right> right\n0282e400 } }", color = "blue" ]
+}
+
+		elem52:<right> -> elem66
+subgraph clust67{
+rankdir = HR;
+	elem67 [ shape = "record", label = "{ <pointer> 67\n0282b720|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  16.000000  | <first> first\n0282e960 } | { <left> left\n0282b2e8 | <right> right\n0282b5e0 } }", color = "blue" ]
+}
+
+		elem66:<left> -> elem67
+subgraph clust68{
+rankdir = HR;
+	elem68 [ shape = "record", label = "{ <pointer> 68\n0282b2e8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  11.000000  | <first> first\n0282e960 } | { <left> left\n0282b1f8 | <right> right\n0282b298 } }", color = "blue" ]
+}
+
+		elem67:<left> -> elem68
+subgraph clust69{
+rankdir = HR;
+	elem69 [ shape = "record", label = "{ <pointer> 69\n0282b1f8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem68:<left> -> elem69
+subgraph clust70{
+rankdir = HR;
+	elem70 [ shape = "record", label = "{ <pointer> 70\n0282b298|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem68:<right> -> elem70
+subgraph clust71{
+rankdir = HR;
+	elem71 [ shape = "record", label = "{ <pointer> 71\n0282b5e0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282b6f8 | <right> right\n0282b4f0 } }", color = "blue" ]
+}
+
+		elem67:<right> -> elem71
+subgraph clust72{
+rankdir = HR;
+	elem72 [ shape = "record", label = "{ <pointer> 72\n0282b6f8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282b6d0 | <right> right\n0282b4a0 } }", color = "blue" ]
+}
+
+		elem71:<left> -> elem72
+subgraph clust73{
+rankdir = HR;
+	elem73 [ shape = "record", label = "{ <pointer> 73\n0282b6d0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282b540 | <right> right\n0282b680 } }", color = "blue" ]
+}
+
+		elem72:<left> -> elem73
+subgraph clust74{
+rankdir = HR;
+	elem74 [ shape = "record", label = "{ <pointer> 74\n0282b540|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem73:<left> -> elem74
+subgraph clust75{
+rankdir = HR;
+	elem75 [ shape = "record", label = "{ <pointer> 75\n0282b680|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282b590 | <right> right\n0282b5b8 } }", color = "blue" ]
+}
+
+		elem73:<right> -> elem75
+subgraph clust76{
+rankdir = HR;
+	elem76 [ shape = "record", label = "{ <pointer> 76\n0282b590|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282b658 | <right> right\n0282b608 } }", color = "blue" ]
+}
+
+		elem75:<left> -> elem76
+subgraph clust77{
+rankdir = HR;
+	elem77 [ shape = "record", label = "{ <pointer> 77\n0282b658|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282b568 | <right> right\n0282b630 } }", color = "blue" ]
+}
+
+		elem76:<left> -> elem77
+subgraph clust78{
+rankdir = HR;
+	elem78 [ shape = "record", label = "{ <pointer> 78\n0282b568|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem77:<left> -> elem78
+subgraph clust79{
+rankdir = HR;
+	elem79 [ shape = "record", label = "{ <pointer> 79\n0282b630|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem77:<right> -> elem79
+subgraph clust80{
+rankdir = HR;
+	elem80 [ shape = "record", label = "{ <pointer> 80\n0282b608|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem76:<right> -> elem80
+subgraph clust81{
+rankdir = HR;
+	elem81 [ shape = "record", label = "{ <pointer> 81\n0282b5b8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem75:<right> -> elem81
+subgraph clust82{
+rankdir = HR;
+	elem82 [ shape = "record", label = "{ <pointer> 82\n0282b4a0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem72:<right> -> elem82
+subgraph clust83{
+rankdir = HR;
+	elem83 [ shape = "record", label = "{ <pointer> 83\n0282b4f0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  20.000000  | <first> first\n0282e960 } | { <left> left\n0282b518 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem71:<right> -> elem83
+subgraph clust84{
+rankdir = HR;
+	elem84 [ shape = "record", label = "{ <pointer> 84\n0282b518|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem83:<left> -> elem84
+subgraph clust85{
+rankdir = HR;
+	elem85 [ shape = "record", label = "{ <pointer> 85\n0282e400|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282dde8 | <right> right\n0282e3d8 } }", color = "blue" ]
+}
+
+		elem66:<right> -> elem85
+subgraph clust86{
+rankdir = HR;
+	elem86 [ shape = "record", label = "{ <pointer> 86\n0282dde8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282dcd0 | <right> right\n0282ddc0 } }", color = "blue" ]
+}
+
+		elem85:<left> -> elem86
+subgraph clust87{
+rankdir = HR;
+	elem87 [ shape = "record", label = "{ <pointer> 87\n0282dcd0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282df28 | <right> right\n0282e108 } }", color = "blue" ]
+}
+
+		elem86:<left> -> elem87
+subgraph clust88{
+rankdir = HR;
+	elem88 [ shape = "record", label = "{ <pointer> 88\n0282df28|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e040 | <right> right\n0282dfc8 } }", color = "blue" ]
+}
+
+		elem87:<left> -> elem88
+subgraph clust89{
+rankdir = HR;
+	elem89 [ shape = "record", label = "{ <pointer> 89\n0282e040|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282b4c8 | <right> right\n0282b6a8 } }", color = "blue" ]
+}
+
+		elem88:<left> -> elem89
+subgraph clust90{
+rankdir = HR;
+	elem90 [ shape = "record", label = "{ <pointer> 90\n0282b4c8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  7.000000  | <first> first\n0282e960 } | { <left> left\n0282b748 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem89:<left> -> elem90
+subgraph clust91{
+rankdir = HR;
+	elem91 [ shape = "record", label = "{ <pointer> 91\n0282b748|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem90:<left> -> elem91
+subgraph clust92{
+rankdir = HR;
+	elem92 [ shape = "record", label = "{ <pointer> 92\n0282b6a8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem89:<right> -> elem92
+subgraph clust93{
+rankdir = HR;
+	elem93 [ shape = "record", label = "{ <pointer> 93\n0282dfc8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282df00 | <right> right\n0282dd48 } }", color = "blue" ]
+}
+
+		elem88:<right> -> elem93
+subgraph clust94{
+rankdir = HR;
+	elem94 [ shape = "record", label = "{ <pointer> 94\n0282df00|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282ded8 | <right> right\n0282e068 } }", color = "blue" ]
+}
+
+		elem93:<left> -> elem94
+subgraph clust95{
+rankdir = HR;
+	elem95 [ shape = "record", label = "{ <pointer> 95\n0282ded8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282de88 | <right> right\n0282deb0 } }", color = "blue" ]
+}
+
+		elem94:<left> -> elem95
+subgraph clust96{
+rankdir = HR;
+	elem96 [ shape = "record", label = "{ <pointer> 96\n0282de88|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282e0e0 | <right> right\n0282dc80 } }", color = "blue" ]
+}
+
+		elem95:<left> -> elem96
+subgraph clust97{
+rankdir = HR;
+	elem97 [ shape = "record", label = "{ <pointer> 97\n0282e0e0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282e130 | <right> right\n0282de60 } }", color = "blue" ]
+}
+
+		elem96:<left> -> elem97
+subgraph clust98{
+rankdir = HR;
+	elem98 [ shape = "record", label = "{ <pointer> 98\n0282e130|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem97:<left> -> elem98
+subgraph clust99{
+rankdir = HR;
+	elem99 [ shape = "record", label = "{ <pointer> 99\n0282de60|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282e158 | <right> right\n0282df78 } }", color = "blue" ]
+}
+
+		elem97:<right> -> elem99
+subgraph clust100{
+rankdir = HR;
+	elem100 [ shape = "record", label = "{ <pointer> 100\n0282e158|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem99:<left> -> elem100
+subgraph clust101{
+rankdir = HR;
+	elem101 [ shape = "record", label = "{ <pointer> 101\n0282df78|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem99:<right> -> elem101
+subgraph clust102{
+rankdir = HR;
+	elem102 [ shape = "record", label = "{ <pointer> 102\n0282dc80|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem96:<right> -> elem102
+subgraph clust103{
+rankdir = HR;
+	elem103 [ shape = "record", label = "{ <pointer> 103\n0282deb0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem95:<right> -> elem103
+subgraph clust104{
+rankdir = HR;
+	elem104 [ shape = "record", label = "{ <pointer> 104\n0282e068|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem94:<right> -> elem104
+subgraph clust105{
+rankdir = HR;
+	elem105 [ shape = "record", label = "{ <pointer> 105\n0282dd48|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem93:<right> -> elem105
+subgraph clust106{
+rankdir = HR;
+	elem106 [ shape = "record", label = "{ <pointer> 106\n0282e108|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  15.000000  | <first> first\n0282e960 } | { <left> left\n0282e0b8 | <right> right\n0282dd70 } }", color = "blue" ]
+}
+
+		elem87:<right> -> elem106
+subgraph clust107{
+rankdir = HR;
+	elem107 [ shape = "record", label = "{ <pointer> 107\n0282e0b8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282dd98 | <right> right\n0282e018 } }", color = "blue" ]
+}
+
+		elem106:<left> -> elem107
+subgraph clust108{
+rankdir = HR;
+	elem108 [ shape = "record", label = "{ <pointer> 108\n0282dd98|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n0282dd20 | <right> right\n0282dff0 } }", color = "blue" ]
+}
+
+		elem107:<left> -> elem108
+subgraph clust109{
+rankdir = HR;
+	elem109 [ shape = "record", label = "{ <pointer> 109\n0282dd20|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n0282de38 | <right> right\n0282dfa0 } }", color = "blue" ]
+}
+
+		elem108:<left> -> elem109
+subgraph clust110{
+rankdir = HR;
+	elem110 [ shape = "record", label = "{ <pointer> 110\n0282de38|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n0282e090 | <right> right\n0282de10 } }", color = "blue" ]
+}
+
+		elem109:<left> -> elem110
+subgraph clust111{
+rankdir = HR;
+	elem111 [ shape = "record", label = "{ <pointer> 111\n0282e090|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem110:<left> -> elem111
+subgraph clust112{
+rankdir = HR;
+	elem112 [ shape = "record", label = "{ <pointer> 112\n0282de10|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n0282dca8 | <right> right\n0282df50 } }", color = "blue" ]
+}
+
+		elem110:<right> -> elem112
+subgraph clust113{
+rankdir = HR;
+	elem113 [ shape = "record", label = "{ <pointer> 113\n0282dca8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem112:<left> -> elem113
+subgraph clust114{
+rankdir = HR;
+	elem114 [ shape = "record", label = "{ <pointer> 114\n0282df50|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem112:<right> -> elem114
+subgraph clust115{
+rankdir = HR;
+	elem115 [ shape = "record", label = "{ <pointer> 115\n0282dfa0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem109:<right> -> elem115
+subgraph clust116{
+rankdir = HR;
+	elem116 [ shape = "record", label = "{ <pointer> 116\n0282dff0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem108:<right> -> elem116
+subgraph clust117{
+rankdir = HR;
+	elem117 [ shape = "record", label = "{ <pointer> 117\n0282e018|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem107:<right> -> elem117
+subgraph clust118{
+rankdir = HR;
+	elem118 [ shape = "record", label = "{ <pointer> 118\n0282dd70|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  5.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem106:<right> -> elem118
+subgraph clust119{
+rankdir = HR;
+	elem119 [ shape = "record", label = "{ <pointer> 119\n0282ddc0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  20.000000  | <first> first\n0282e960 } | { <left> left\n0282dcf8 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem86:<right> -> elem119
+subgraph clust120{
+rankdir = HR;
+	elem120 [ shape = "record", label = "{ <pointer> 120\n0282dcf8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem119:<left> -> elem120
+subgraph clust121{
+rankdir = HR;
+	elem121 [ shape = "record", label = "{ <pointer> 121\n0282e3d8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  20.000000  | <first> first\n0282e960 } | { <left> left\n0282e3b0 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem85:<right> -> elem121
+subgraph clust122{
+rankdir = HR;
+	elem122 [ shape = "record", label = "{ <pointer> 122\n0282e3b0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  5.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem121:<left> -> elem122
+subgraph clust123{
+rankdir = HR;
+	elem123 [ shape = "record", label = "{ <pointer> 123\n0282e7f8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e7d0 | <right> right\n0282e618 } }", color = "blue" ]
+}
+
+		elem1:<right> -> elem123
+subgraph clust124{
+rankdir = HR;
+	elem124 [ shape = "record", label = "{ <pointer> 124\n0282e7d0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n4 | value\n  -6.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem123:<left> -> elem124
+subgraph clust125{
+rankdir = HR;
+	elem125 [ shape = "record", label = "{ <pointer> 125\n0282e618|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e360 | <right> right\n0282e938 } }", color = "blue" ]
+}
+
+		elem123:<right> -> elem125
+subgraph clust126{
+rankdir = HR;
+	elem126 [ shape = "record", label = "{ <pointer> 126\n0282e360|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e298 | <right> right\n0282e338 } }", color = "blue" ]
+}
+
+		elem125:<left> -> elem126
+subgraph clust127{
+rankdir = HR;
+	elem127 [ shape = "record", label = "{ <pointer> 127\n0282e298|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  8.000000  | <first> first\n0282e960 } | { <left> left\n0282e220 | <right> right\n0282e270 } }", color = "blue" ]
+}
+
+		elem126:<left> -> elem127
+subgraph clust128{
+rankdir = HR;
+	elem128 [ shape = "record", label = "{ <pointer> 128\n0282e220|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  19.000000  | <first> first\n0282e960 } | { <left> left\n0282e1f8 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem127:<left> -> elem128
+subgraph clust129{
+rankdir = HR;
+	elem129 [ shape = "record", label = "{ <pointer> 129\n0282e1f8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem128:<left> -> elem129
+subgraph clust130{
+rankdir = HR;
+	elem130 [ shape = "record", label = "{ <pointer> 130\n0282e270|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  19.000000  | <first> first\n0282e960 } | { <left> left\n0282e248 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem127:<right> -> elem130
+subgraph clust131{
+rankdir = HR;
+	elem131 [ shape = "record", label = "{ <pointer> 131\n0282e248|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem130:<left> -> elem131
+subgraph clust132{
+rankdir = HR;
+	elem132 [ shape = "record", label = "{ <pointer> 132\n0282e338|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  19.000000  | <first> first\n0282e960 } | { <left> left\n0282e2c0 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem126:<right> -> elem132
+subgraph clust133{
+rankdir = HR;
+	elem133 [ shape = "record", label = "{ <pointer> 133\n0282e2c0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem132:<left> -> elem133
+subgraph clust134{
+rankdir = HR;
+	elem134 [ shape = "record", label = "{ <pointer> 134\n0282e938|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  17.000000  | <first> first\n0282e960 } | { <left> left\n0282e5c8 | <right> right\n0282e5f0 } }", color = "blue" ]
+}
+
+		elem125:<right> -> elem134
+subgraph clust135{
+rankdir = HR;
+	elem135 [ shape = "record", label = "{ <pointer> 135\n0282e5c8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  16.000000  | <first> first\n0282e960 } | { <left> left\n0282e500 | <right> right\n0282e4b0 } }", color = "blue" ]
+}
+
+		elem134:<left> -> elem135
+subgraph clust136{
+rankdir = HR;
+	elem136 [ shape = "record", label = "{ <pointer> 136\n0282e500|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  11.000000  | <first> first\n0282e960 } | { <left> left\n0282e388 | <right> right\n0282e690 } }", color = "blue" ]
+}
+
+		elem135:<left> -> elem136
+subgraph clust137{
+rankdir = HR;
+	elem137 [ shape = "record", label = "{ <pointer> 137\n0282e388|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem136:<left> -> elem137
+subgraph clust138{
+rankdir = HR;
+	elem138 [ shape = "record", label = "{ <pointer> 138\n0282e690|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n1 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem136:<right> -> elem138
+subgraph clust139{
+rankdir = HR;
+	elem139 [ shape = "record", label = "{ <pointer> 139\n0282e4b0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  21.000000  | <first> first\n0282e960 } | { <left> left\n0282e730 | <right> right\n0282e5a0 } }", color = "blue" ]
+}
+
+		elem135:<right> -> elem139
+subgraph clust140{
+rankdir = HR;
+	elem140 [ shape = "record", label = "{ <pointer> 140\n0282e730|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e578 | <right> right\n0282e780 } }", color = "blue" ]
+}
+
+		elem139:<left> -> elem140
+subgraph clust141{
+rankdir = HR;
+	elem141 [ shape = "record", label = "{ <pointer> 141\n0282e578|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e820 | <right> right\n0282e488 } }", color = "blue" ]
+}
+
+		elem140:<left> -> elem141
+subgraph clust142{
+rankdir = HR;
+	elem142 [ shape = "record", label = "{ <pointer> 142\n0282e820|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem141:<left> -> elem142
+subgraph clust143{
+rankdir = HR;
+	elem143 [ shape = "record", label = "{ <pointer> 143\n0282e488|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem141:<right> -> elem143
+subgraph clust144{
+rankdir = HR;
+	elem144 [ shape = "record", label = "{ <pointer> 144\n0282e780|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem140:<right> -> elem144
+subgraph clust145{
+rankdir = HR;
+	elem145 [ shape = "record", label = "{ <pointer> 145\n0282e5a0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n4 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem139:<right> -> elem145
+subgraph clust146{
+rankdir = HR;
+	elem146 [ shape = "record", label = "{ <pointer> 146\n0282e5f0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  21.000000  | <first> first\n0282e960 } | { <left> left\n0282e668 | <right> right\n0282e708 } }", color = "blue" ]
+}
+
+		elem134:<right> -> elem146
+subgraph clust147{
+rankdir = HR;
+	elem147 [ shape = "record", label = "{ <pointer> 147\n0282e668|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e7a8 | <right> right\n0282e758 } }", color = "blue" ]
+}
+
+		elem146:<left> -> elem147
+subgraph clust148{
+rankdir = HR;
+	elem148 [ shape = "record", label = "{ <pointer> 148\n0282e7a8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e848 | <right> right\n0282e8e8 } }", color = "blue" ]
+}
+
+		elem147:<left> -> elem148
+subgraph clust149{
+rankdir = HR;
+	elem149 [ shape = "record", label = "{ <pointer> 149\n0282e848|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e898 | <right> right\n0282e6e0 } }", color = "blue" ]
+}
+
+		elem148:<left> -> elem149
+subgraph clust150{
+rankdir = HR;
+	elem150 [ shape = "record", label = "{ <pointer> 150\n0282e898|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e8c0 | <right> right\n0282e910 } }", color = "blue" ]
+}
+
+		elem149:<left> -> elem150
+subgraph clust151{
+rankdir = HR;
+	elem151 [ shape = "record", label = "{ <pointer> 151\n0282e8c0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n3 | value\n  22.000000  | <first> first\n0282e960 } | { <left> left\n0282e640 | <right> right\n0282e6b8 } }", color = "blue" ]
+}
+
+		elem150:<left> -> elem151
+subgraph clust152{
+rankdir = HR;
+	elem152 [ shape = "record", label = "{ <pointer> 152\n0282e640|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  0.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem151:<left> -> elem152
+subgraph clust153{
+rankdir = HR;
+	elem153 [ shape = "record", label = "{ <pointer> 153\n0282e6b8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem151:<right> -> elem153
+subgraph clust154{
+rankdir = HR;
+	elem154 [ shape = "record", label = "{ <pointer> 154\n0282e910|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  2.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem150:<right> -> elem154
+subgraph clust155{
+rankdir = HR;
+	elem155 [ shape = "record", label = "{ <pointer> 155\n0282e6e0|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  3.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem149:<right> -> elem155
+subgraph clust156{
+rankdir = HR;
+	elem156 [ shape = "record", label = "{ <pointer> 156\n0282e8e8|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  4.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem148:<right> -> elem156
+subgraph clust157{
+rankdir = HR;
+	elem157 [ shape = "record", label = "{ <pointer> 157\n0282e758|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n2 | value\n  5.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem147:<right> -> elem157
+subgraph clust158{
+rankdir = HR;
+	elem158 [ shape = "record", label = "{ <pointer> 158\n0282e708|{ canaryLEFT\n666666666 | canaryRIGHT\n999999999 } |  { key\n4 | value\n  1.000000  | <first> first\n0282e960 } | { <left> left\n00000000 | <right> right\n00000000 } }", color = "blue" ]
+}
+
+		elem146:<right> -> elem158
+}
